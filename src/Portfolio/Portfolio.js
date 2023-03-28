@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Portfolio.css';
 import axios from 'axios'; 
+import Marquee from 'react-fast-marquee'; 
 
 const Portfolio = () => {
     const [data, setData] = useState({
@@ -100,7 +101,7 @@ const Portfolio = () => {
                 </div>
                 <div className="col-12">
                     <div className=" text-center">
-                        <marquee className="scrol">
+                        <Marquee className="scrol">
                             <img className="sizing" src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw" alt="" />
 
                             <img className="sizing ezlsd" src="http://x7d4c5z5.stackpathcdn.com/wp-content/uploads/2014/10/css3.jpg" alt="" />
@@ -108,7 +109,7 @@ const Portfolio = () => {
                             <img className="sizing" src="https://pbs.twimg.com/profile_images/1273081551354396672/-Tzadxix_400x400.jpg" alt="" />
 
                             <img className="sizing" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLrC1wJORhjBI7hHmCBJWBwinpnjfVwxlyvlwIhIWKTpdn1X62aOD6U6VUUoCn1k7YhZM&usqp=CAU" alt="" />
-                        </marquee>
+                        </Marquee>
                     </div>
                 </div>
             </div>
