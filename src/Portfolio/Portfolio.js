@@ -32,7 +32,7 @@ const Portfolio = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav m-auto">
                     <li className="nav-item ">
-                        <a className="nav-link" id="navItem1" href="#">Home</a>
+                        <a className="nav-link" id="navItem1" href="##">Home</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" id="navItem2" href="#About-section">About Me</a>
@@ -73,7 +73,7 @@ const Portfolio = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-6 col-sm-12">
-                    <img src="1661776979349.jpg" className="image-style w-75" />
+                    <img src="1661776979349.jpg" alt = "" className="image-style w-75" />
                 </div>
                 <div className="col-md-6 col-sm-12">
                     <div className="about-text pt-3">
@@ -122,7 +122,7 @@ const Portfolio = () => {
                 <div className="col-12">
                     <div className=" text-center">
                         <p>Let Me Get You A Beautiful Website.</p>
-                        <a className="button-two" href="#">Ping Me</a> 
+                        <a className="button-two" href="##">Ping Me</a> 
                     </div>
                 </div>
             </div>
