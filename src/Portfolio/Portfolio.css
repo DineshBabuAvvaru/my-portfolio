@@ -263,3 +263,22 @@ h4 {
     font-weight: 200;
     color: white;
 }
+
+.contact-button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 25px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.contact-button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+ 
