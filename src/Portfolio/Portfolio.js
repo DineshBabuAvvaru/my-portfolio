@@ -14,6 +14,7 @@ const Portfolio = () => {
   const changeHandler = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
+
   const submitHandler = (e) => {
     e.preventDefault();
     if ((fullname !== "") & (phone !== "") & (email !== "")) {
@@ -198,55 +199,64 @@ const Portfolio = () => {
         <hr />
 
         {/* footer */}
-        <div className="container-foot-section" id="contact-me">
-          <h1 className="display-2" id="contact-me">
-            {" "}
-            CONTACT{" "}
-          </h1>
-          <p className="paragraph-2"> chirala, Andhrapradesh, India </p>
-          <form onSubmit={submitHandler}>
-            <div className="form-group">
-              <input
-                type="text"
-                className="form-control"
-                id="Name"
-                name="fullname"
-                placeholder="Name"
-                onChange={changeHandler}
-                value={fullname}
-                required
-              />{" "}
-              <br />
-              <input
-                type="number"
-                className="form-control"
-                id="Phone"
-                name="phone"
-                placeholder="Phone"
-                onChange={changeHandler}
-                value={phone}
-                required
-              />{" "}
-              <br />
-              <input
-                type="email"
-                className="form-control"
-                id="Email"
-                name="email"
-                placeholder="Email"
-                onChange={changeHandler}
-                value={email}
-                required
-              />{" "}
-              <br />
-            </div>
-            <button className="contact-button"> Contact Me </button>
-          </form>
+        <div className="containers-foot-section" id="contact-me">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 pb-5">
+                <h1 className="display-2" id="contact-me">
+                  {" "}
+                  CONTACT{" "}
+                </h1>
+                <p className="paragraph-2"> chirala, Andhrapradesh, India </p>
+                <form onSubmit={submitHandler}>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="Name"
+                      name="fullname"
+                      placeholder="Name"
+                      onChange={changeHandler}
+                      value={fullname}
+                      required
+                    />{" "}
+                    <br />
+                    <input
+                      type="number"
+                      className="form-control"
+                      id="Phone"
+                      name="phone"
+                      placeholder="Phone"
+                      onChange={changeHandler}
+                      value={phone}
+                      required
+                    />{" "}
+                    <br />
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="Email"
+                      name="email"
+                      placeholder="Email"
+                      onChange={changeHandler}
+                      value={email}
+                      required
+                    />{" "}
+                    <br />
+                  </div>
+                  <button className="contact-button" onClick={submitHandler}>
+                    {" "}
+                    Contact Me{" "}
+                  </button>
+                </form>
 
-          <h1 className="footerheading text-center pt-3 pb-2">
-            Created by <span className="specialname">Dinesh Babu</span> | all
-            rights reserved...!
-          </h1>
+                <h1 className="footerheading text-center pt-3 pb-2">
+                  Created by <span className="specialname">Dinesh Babu</span> |
+                  all rights reserved...!
+                </h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
