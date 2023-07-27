@@ -237,11 +237,12 @@ h4 {
 
 }
 
+
 .footerheading {
     font-size: 30px;
 }
 
-.containers-foot-section {
+.foot-section {
     background-color: rgb(26, 22, 22);
     padding-bottom: 20px;
     padding-left: 250px;
@@ -259,7 +260,6 @@ h4 {
 .paragraph-2 {
     text-align: center;
     font-size: 35px;
-    
     font-weight: 200;
     color: white;
 }
@@ -281,4 +281,123 @@ h4 {
     cursor: pointer;
 }
 
- 
+.head {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+.paragraph{
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    padding-bottom: 10px;
+    margin-right: 1rem;
+    display: block;
+    font-weight: 400;
+    padding: 10px;
+}
+.instagram {
+    color: white;
+    margin-right: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.linkedin {
+    color: white;
+    margin-right: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.twitter{
+    color: white;
+    margin-right: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.social {
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 786px) {
+    .social{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+*{
+    box-sizing: border-box;
+    font-family: Outfit, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.left-side {
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    width: 50%;
+}
+
+@media (max-width: 786px) {
+    .left-side{
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.footer-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 786px) {
+    .footer-container{
+        flex-direction: column;
+        margin-bottom: -70px;
+        display: flex;
+        
+    }
+}
+
+.footer-container, .left-side{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    width: 50%;
+}
+
+@media (max-width: 786px) {
+    .rightSide{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.email, .location, .phone {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    padding: 1px;
+    margin-left: 60px;
+}
+
+.all{
+    padding-left: 15px;
+    font-size: 20px;
+}
